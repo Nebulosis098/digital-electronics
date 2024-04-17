@@ -10,10 +10,10 @@ module moduleName (
 // Signal declarations -> Internal variables 
 
 
-//Body: Describe the internal organization of circuit 
+//Body: Describe the internal organization of circuit
 always @() begin
 
-    X <= ~(A | B | C); // PORQUE NO ANDAAAAAA? HDP    
+    X <= ~(A | B | C); // PORQUE NO ANDAAAAAA?    
 
 end
 
