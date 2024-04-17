@@ -1,0 +1,5 @@
+Ruta para acceder y activar apio_venv con bin/activate
+/Users/maxieberhardt/apio_venv
+
+Ruta para ubicarnos en los documentos
+/Users/maxieberhardt/Documents/Migracion compu/FACULTAD/3-1_ PRIMER CUATRIMESTRE 2022/17_Electronica digital/edu-ciaa-fpga-verilog-main/2024-FPGA
