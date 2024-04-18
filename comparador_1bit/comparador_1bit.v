@@ -8,11 +8,12 @@ module comparador_1bit (
 wire p0, p1;
 
 //body
-//sum of products terms
-assign eq = p0 | p1;
 
 //product terms
 assign p0 = ~i0 & ~i1;
 assign p1 = i0 & i1;
+
+//sum of products terms
+assign eq = p0 | p1;
     
 endmodule
