@@ -1,4 +1,4 @@
-module moduleName (
+module nor_gate (
 
 // Seccion de declaracion de puertos i/o (inputs outputs) que tiene el circuito
     input wire A,
@@ -9,14 +9,20 @@ module moduleName (
 
 // Signal declarations -> Internal variables 
 
+wire p0;
 
 //Body: Describe the internal organization of circuit
-always @() begin
+assign p0 = A | B | C;
 
-    X <= ~(A | B | C); // PORQUE NO ANDAAAAAA?    
+assign X = ~p0;
 
+//Probemos con el bloque always para hacerlo secuencial
+/*always @(clk) begin
+    p0 = A or B or C;
+
+    X = not p0;
 end
-
+*/
 
     
 endmodule 
