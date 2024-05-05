@@ -15,14 +15,5 @@ wire p0;
 assign p0 = A | B | C;
 
 assign X = ~p0;
-
-//Probemos con el bloque always para hacerlo secuencial
-/*always @(clk) begin
-    p0 = A or B or C;
-
-    X = not p0;
-end
-*/
-
     
 endmodule 
