@@ -21,13 +21,14 @@ reg clk = 0;
 always #0.5 clk = ~clk;
 
 // hamming_emisor ports
-reg pr_test, prr_test, j_test, k_test;
+reg pr_test, prr_test, en_test, j_test, k_test;
 wire q_test;
 
 jk_modificado UUT(
     .clk(clk),
     .preset(pr_test),
     .prereset(prr_test),
+    .en(en_test),
     .J(j_test),
     .K(k_test),
     .q(q_test)
@@ -49,21 +50,28 @@ initial begin
         $display ("Current loop # %0d", i);
         $display ("Current loop # %0b", i);
 
-        #2
+        en_test = 0;
         pr_test = 1;
+        prr_test = 1;
+        j_test = 0; 
+        k_test = 1;
 
         #2
-        pr_test = 0;
+        en_test = 1;
+        pr_test = 1;
+        prr_test = 1;
+        j_test = 1; 
+        k_test = 1;
+
+        #2
         prr_test = 0;
 
         #2
         prr_test = 1;
-
-        #2
-        prr_test = 0;
         k_test = 0;
 
         #2
+        pr_test = 0;
         j_test = 1;
        
     end
