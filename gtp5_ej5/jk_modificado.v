@@ -28,7 +28,7 @@ always @(posedge clk, posedge preset, posedge prereset) begin
         endcase 
     end
 end
-    
+        
 endmodule
 
 
