@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed May 29 20:09:39 2024
+[*]
+[dumpfile] "ram_tb.vcd"
+[dumpfile_mtime] "Wed May 29 20:09:03 2024"
+[dumpfile_size] 2636
+[savefile] "ram_tb.gtkw"
+[timestart] 0
+[size] 1288 600
+[pos] -1 -1
+*-18.708147 1179000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[treeopen] ram_tb.
+[sst_width] 253
+[signals_width] 152
+[sst_expanded] 1
+[sst_vpaned_height] 159
+@28
+ram_tb.UUT.clk
+@22
+ram_tb.UUT.address[3:0]
+@28
+ram_tb.UUT.we
+ram_tb.UUT.write_data[3:0]
+@29
+ram_tb.UUT.read_data[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
