@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------------
+#- EDU-CIAA-FPGA constraint file (.pcf)
+#  Author : Juan Gonzalez Gomez (Obijuan)
+#- Sep - 2020
+#- GPL license
+#- Repo: https://gitlab.com/educiaafpga
+#- Pinout: https://github.com/ciaa/Hardware/blob/master/PCB/EDU-FPGA/Pinout/Pinout%20EDU%20FPGA.pdf
+
+
+
+#------ User Ports
+set_io --warn-no-port clk 94  #-- input
+set_io --warn-no-port square_wave_final 107  #-- output
+
+
